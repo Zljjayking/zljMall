@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="logisticsNowTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单跟踪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZV-SC-Lbs">
+                        <rect key="frame" x="11" y="11" width="58" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="RPx-Fq-Eee"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20177928664921468" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="express_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8vA-zV-nUV">
+                        <rect key="frame" x="11" y="36" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Dm2-Or-rFQ"/>
+                            <constraint firstAttribute="height" constant="22" id="fDf-BU-0UL"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpj-uM-Xq6">
+                        <rect key="frame" x="21" y="58" width="1" height="47"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="zhz-9W-31v"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-08-10 18:30:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUt-SM-6B7">
+                        <rect key="frame" x="44" y="68" width="130.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="tjG-Di-rR8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.1450980392" green="0.50196078430000002" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小哥正在送货" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMG-r7-x46">
+                        <rect key="frame" x="44" y="40" width="322" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.14509803921568626" green="0.50196078431372548" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gUt-SM-6B7" firstAttribute="top" secondItem="fMG-r7-x46" secondAttribute="bottom" constant="12" id="8pZ-kR-oA1"/>
+                    <constraint firstItem="gpj-uM-Xq6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="58" id="EQ4-Ns-acd"/>
+                    <constraint firstItem="gUt-SM-6B7" firstAttribute="leading" secondItem="fMG-r7-x46" secondAttribute="leading" id="LIm-bg-Hd2"/>
+                    <constraint firstAttribute="trailing" secondItem="fMG-r7-x46" secondAttribute="trailing" constant="9" id="Oca-by-DS1"/>
+                    <constraint firstItem="8vA-zV-nUV" firstAttribute="top" secondItem="kZV-SC-Lbs" secondAttribute="bottom" constant="8" id="Q3N-ZM-SN2"/>
+                    <constraint firstItem="kZV-SC-Lbs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="QKi-Uc-mEG"/>
+                    <constraint firstItem="fMG-r7-x46" firstAttribute="top" secondItem="kZV-SC-Lbs" secondAttribute="bottom" constant="12" id="Y2M-Tw-CLs"/>
+                    <constraint firstItem="8vA-zV-nUV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="beZ-SQ-iXO"/>
+                    <constraint firstItem="gpj-uM-Xq6" firstAttribute="centerX" secondItem="8vA-zV-nUV" secondAttribute="centerX" id="c4m-py-UQV"/>
+                    <constraint firstItem="fMG-r7-x46" firstAttribute="leading" secondItem="8vA-zV-nUV" secondAttribute="trailing" constant="11" id="uv3-be-cIn"/>
+                    <constraint firstItem="kZV-SC-Lbs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="x4q-G6-wWY"/>
+                    <constraint firstAttribute="bottom" secondItem="gpj-uM-Xq6" secondAttribute="bottom" constant="-0.5" id="xnl-qh-LI4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="timeLb" destination="gUt-SM-6B7" id="lkU-Oh-KnB"/>
+                <outlet property="titleLb" destination="fMG-r7-x46" id="xpC-hg-Bif"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="132.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="express_icon" width="22" height="22"/>
+    </resources>
+</document>

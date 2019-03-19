@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="goodsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FXQ-VO-kyO">
+                        <rect key="frame" x="13" y="12" width="349" height="187.5"/>
+                        <color key="backgroundColor" red="0.86677846859999996" green="0.86479466620000001" blue="0.8671875" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vipBg_sm" translatesAutoresizingMaskIntoConstraints="NO" id="scS-uh-EHR">
+                        <rect key="frame" x="307" y="18" width="51" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="KUb-pN-bkY"/>
+                            <constraint firstAttribute="height" constant="35" id="fnB-55-Wga"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goods_footer_bg" translatesAutoresizingMaskIntoConstraints="NO" id="u5G-tY-RLJ">
+                        <rect key="frame" x="13" y="157.5" width="349" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="fj4-XX-hps"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZM-dc-heS">
+                        <rect key="frame" x="278" y="167" width="77" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="FAV-M5-wpf"/>
+                            <constraint firstAttribute="width" constant="77" id="LvP-2w-Fdf"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="rEU-bf-KKG"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="xTk-HQ-1ih"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="分享赚" image="home_icon_share"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeX-XV-Zt6">
+                        <rect key="frame" x="28" y="167" width="50" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="Skr-OC-Rk0"/>
+                            <constraint firstAttribute="height" constant="23" id="wox-qh-Sqp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zZM-dc-heS" firstAttribute="centerY" secondItem="YeX-XV-Zt6" secondAttribute="centerY" id="2de-p2-2YX"/>
+                    <constraint firstAttribute="trailing" secondItem="zZM-dc-heS" secondAttribute="trailing" constant="20" id="39m-Iz-80H"/>
+                    <constraint firstAttribute="bottom" secondItem="FXQ-VO-kyO" secondAttribute="bottom" id="8ZJ-gn-xpR"/>
+                    <constraint firstAttribute="bottom" secondItem="YeX-XV-Zt6" secondAttribute="bottom" constant="9.5" id="FhK-gc-bvE"/>
+                    <constraint firstAttribute="bottom" secondItem="u5G-tY-RLJ" secondAttribute="bottom" id="JS8-L4-BVg"/>
+                    <constraint firstAttribute="trailing" secondItem="scS-uh-EHR" secondAttribute="trailing" constant="17" id="OPp-kn-804"/>
+                    <constraint firstAttribute="trailing" secondItem="FXQ-VO-kyO" secondAttribute="trailing" constant="13" id="QXr-sf-FqA"/>
+                    <constraint firstItem="FXQ-VO-kyO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="S0N-ne-yoh"/>
+                    <constraint firstItem="scS-uh-EHR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="d57-5u-g1e"/>
+                    <constraint firstItem="FXQ-VO-kyO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="dDi-Qc-TVp"/>
+                    <constraint firstItem="u5G-tY-RLJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="g9a-ez-6cm"/>
+                    <constraint firstAttribute="trailing" secondItem="u5G-tY-RLJ" secondAttribute="trailing" constant="13" id="i2R-EE-jvn"/>
+                    <constraint firstItem="YeX-XV-Zt6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="zsk-Wz-da2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="goodsImageV" destination="FXQ-VO-kyO" id="Tah-uP-420"/>
+                <outlet property="goodsPriceLb" destination="YeX-XV-Zt6" id="mS1-cW-m0T"/>
+                <outlet property="sharebtn" destination="zZM-dc-heS" id="9g8-7p-1yV"/>
+                <outlet property="vipBgImage" destination="scS-uh-EHR" id="CgB-fM-shI"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="goods_footer_bg" width="350" height="34"/>
+        <image name="home_icon_share" width="18" height="18"/>
+        <image name="vipBg_sm" width="51" height="35"/>
+    </resources>
+</document>
